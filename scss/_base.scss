@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 18px; 
+    position: relative;
+    min-height: 90vh;
+    padding-bottom: 9rem;
+
+    a{
+    text-decoration: none;
+    color: map-get($colores, primario );  
+    }
+
+    h1{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    color: map-get($colores, primario );
+    }
+
+    h2{
+        font-size: 1.5rem;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10%;     
+    }
+    
+    li{
+        list-style: none;
+    }
+
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        
+    }
+}
+
+.copyright{
+    background-color: map-get($colores, bg-footer );
+
+}
+
+.img__portada{
+    width: 100%;
+    height: 400px;
+    @extend %cover;
+}
+
+.container{
+    margin-top: 6rem;
+}
+

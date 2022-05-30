@@ -1,0 +1,68 @@
+/* mobile */
+
+@media only screen and (max-width:599px) {
+    
+    .img__portada  {
+        display: none;
+    }
+    .contenedorBuscador{
+        display: none;
+    }
+    .gridPadre {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas:
+            "imagenUno"
+            "imagenDos"
+            "imagenTres"
+            "imagenCuatro"
+            "imagenCinco"
+            "imagenSeis"
+        ;
+
+    }
+    .contenedorCardsGrid {
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows:  1fr;
+        }
+        
+        .card1 { grid-area: 1 / 2 / 2 / 3; }
+        .card2 { grid-area: 2 / 2 / 3 / 3; }
+        .card3 { grid-area: 3 / 2 / 4 / 3; }
+        .card4 { grid-area: 4 / 2 / 5 / 3; }
+        .card5 { grid-area: 5 / 2 / 6 / 3; }
+        .card6 { grid-area: 6 / 2 / 7 / 3; }
+
+}
+
+/* tablet */
+@media only screen and (min-width:600px) and (max-width:1023px) {
+    .buscador{
+        position: absolute;
+        left: 68%;
+    }
+    .icon__buscador{
+        display: none;
+    }
+    .icon__carrito{
+       display: none;
+    }
+    .icon__usuario{
+        display: none;
+    }
+
+    .gridPadre {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "imagenUno imagenDos"
+            "imagenTres imagenCuatro"
+            "imagenCinco imagenSeis"
+        ;
+    }
+
+
+}

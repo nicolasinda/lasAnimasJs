@@ -1,0 +1,21 @@
+
+$colores: (
+    primario: black,
+    secundario: rgb(255, 230, 0), 
+    bg-footer: rgba(128, 128, 128, 0.712)
+);
+
+%d-grid{
+    display: grid;
+}
+
+%cover{
+    object-fit: cover;
+}
+
+@mixin flexbox($direction, $justify, $weap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}

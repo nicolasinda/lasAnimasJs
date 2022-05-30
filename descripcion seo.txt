@@ -1,0 +1,10 @@
+LISTADO DE SEO: 
+
+-Se agregaron descripciones en los ALT en imagenes
+-Corecta utilizacion de H1
+-Se agregaron keywords
+-Personalizacion de titulos en cada pagina
+-Se agrego una descripcion a cada pagina
+-Se creo un mapa de sitio
+
+
