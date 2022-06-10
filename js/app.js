@@ -12,13 +12,13 @@ function addToCarritoItem(e) {
   const item = button.closest('.card')
   const itemTitle = item.querySelector('.card-title').textContent;
   const itemPrice = item.querySelector('.precio').textContent;
-  const itemImg = item.querySelector('.card-img-top').src;
+  /* const itemImg = item.querySelector('.card-img-top').src; */
 
 
   const newItem = {
     title: itemTitle,
     precio: itemPrice,
-    img: itemImg,
+    /* img: itemImg, */
     cantidad: 1
   }
 
@@ -47,7 +47,7 @@ function addItemCarrito(newItem) {
   }
 
   carrito.push(newItem)
-
+console.log(carrito)
   renderCarrito()
 }
 
@@ -78,6 +78,7 @@ function renderCarrito() {
     tr.querySelector(".input__elemento").addEventListener('change', sumaCantidad)
   })
   CarritoTotal()
+  console.log(CarritoTotal+ "carritoTotal")
 }
 
 function CarritoTotal() {
