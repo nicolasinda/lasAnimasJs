@@ -12,13 +12,12 @@ function addToCarritoItem(e) {
   const item = button.closest('.card')
   const itemTitle = item.querySelector('.card-title').textContent;
   const itemPrice = item.querySelector('.precio').textContent;
-  /* const itemImg = item.querySelector('.card-img-top').src; */
+  
 
 
   const newItem = {
     title: itemTitle,
     precio: itemPrice,
-    /* img: itemImg, */
     cantidad: 1
   }
 
@@ -47,7 +46,7 @@ function addItemCarrito(newItem) {
   }
 
   carrito.push(newItem)
-console.log(carrito)
+
   renderCarrito()
 }
 
@@ -61,8 +60,7 @@ function renderCarrito() {
     
     <th scope="row">1</th>
             <td class="table__productos">
-              <img src=${item.img}  alt="">
-              <h6 class="title">${item.title}</h6>
+             <h6 class="title">${item.title}</h6>
             </td>
             <td class="table__price"><p>${item.precio}</p></td>
             <td class="table__cantidad">
@@ -78,7 +76,7 @@ function renderCarrito() {
     tr.querySelector(".input__elemento").addEventListener('change', sumaCantidad)
   })
   CarritoTotal()
-  console.log(CarritoTotal+ "carritoTotal")
+
 }
 
 function CarritoTotal() {
